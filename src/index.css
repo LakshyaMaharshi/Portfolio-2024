@@ -1,3 +1,7 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
 * {
     --text: #e6fcee;
     --background: #031f0c;
@@ -15,5 +19,6 @@ body {
     font-style: normal;
     font-variation-settings:
         "slnt" 0;
-    color: var(--text)
+    color: var(--text);
+    overflow-x: hidden;
 }
