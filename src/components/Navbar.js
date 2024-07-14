@@ -6,7 +6,7 @@ const Navbar = () => {
         style={{ fontFamily: "Playwrite CU", fontStyle: "normal" }}>
         Lakshya Maharshi
       </h1>
-      <div className="flex justify-evenly w-1/2" >
+      <div className="flex justify-evenly w-1/2 text-xl " >
         <NavLink to="/" >Home</NavLink>
         <NavLink to="/About" >About</NavLink>
         <NavLink to="/Work" >Work</NavLink>

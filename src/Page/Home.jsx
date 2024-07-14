@@ -4,8 +4,8 @@ import Work from "../components/Work";
 const Home = () => {
   return (
     <div>
-      <About />
       <Intro/>
+      <About />
       <Work/>
     </div>
   )

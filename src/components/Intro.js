@@ -12,7 +12,7 @@ const Intro = () => {
             <h4 className='mx-3 text-2xl mt-3 ' >At <span className='text-orange-600' >In</span>d<span className='text-lime-600	' >ia</span> </h4>
           </div>
 
-          <button className='resume relative left-32 w-1/3 mt-10 border-solid border-2 rounded-md text-2xl font-semibold py-1 ' >Resume</button>
+          <button className='resume w-1/3 mt-10 border-solid border-2 rounded-md text-2xl font-semibold py-1 ' >Resume</button>
 
         </div>
 
