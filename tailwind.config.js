@@ -12,7 +12,7 @@ module.exports = {
         secondaryColor : 'var(--secondary)',
         accentColor : 'var(--accent)',
       }
-    },
+    }
   },
   plugins: [],
 }
