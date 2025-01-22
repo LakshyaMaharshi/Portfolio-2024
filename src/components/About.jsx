@@ -1,8 +1,30 @@
-
+import gsap from "gsap"
+import {useGSAP} from "@gsap/react"
+import { ScrollTrigger } from "gsap/ScrollTrigger";
+import { useRef } from "react";
 const About = () => {
+  gsap.registerPlugin(ScrollTrigger) 
+  const gsapRef = useRef();
+  useGSAP(() => {
+    gsap.from(gsapRef.current, {
+      duration: 3,
+      x: -150,
+      opacity: 0,
+      ease: "elastic.out(1, 0.3)",
+      scrollTrigger: {
+        trigger: gsapRef.current,
+        start: "top 80%",
+        end: "bottom 60%", // End when the bottom of the element reaches the center
+        // markers: true,
+        scrub:2,
+      },
+    });
+  
+    ScrollTrigger.refresh(); // Refresh ScrollTrigger calculations
+  });
   return (
-    <div className="mx-28 my-16 " >
-      <h1 className="text-accentColor text-7xl font-black mb-11 " >about.</h1>
+    <div id="about-intro-div" className="  mx-28 my-16 " ref={gsapRef} >
+      <h1 className="text-accentColor text-7xl font-black mb-11 ">about.</h1>
       <p className="text-2xl leading-9 " >
         I am a beginner developer, I possess a versatile skill set in frontend development and app creation. I am proficient in crafting dynamic web experiences and skilled in mobile app development. I am eager to contribute innovatived grow in collaborative environments. Additionally, I am committed to continuous learning and growth in development.
       </p>
@@ -11,7 +33,7 @@ const About = () => {
         <ul className="list-disc" >
           <li className="my-16" >
             <h4 className="mb-4" >June - Sept. (2024) {`{Frountend Developer Intern}`} </h4>
-            <p className="ml-4" >As a paid Frontend Developer Intern at JPR Systems Pvt. Ltd., I leverage my skills in React and React Native to create dynamic, responsive user interfaces. I specialize in utilizing GSAP and Three.js for advanced animations, enhancing user engagement and experience. My role involves collaborating with cross-functional teams, ensuring seamless integration of frontend elements, and contributing to the development of innovative web and mobile applications.</p>
+            <p className="ml-4" >As a Stipend based Frontend Developer Intern at JPR Systems Pvt. Ltd., I leverage my skills in React and React Native to create dynamic, responsive user interfaces. I specialize in utilizing GSAP and Three.js for advanced animations, enhancing user engagement and experience. My role involves collaborating with cross-functional teams, ensuring seamless integration of frontend elements, and contributing to the development of innovative web and mobile applications.</p>
           </li>
 
           <li className="my-16" >

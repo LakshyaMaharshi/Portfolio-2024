@@ -9,3 +9,7 @@
     box-shadow: var(--secondary) 0px 0px 100px 10px;
     aspect-ratio: 1 /1;
 }
+
+:hover.resume{
+    box-shadow:red 0px 0px 20px 3px;
+}
