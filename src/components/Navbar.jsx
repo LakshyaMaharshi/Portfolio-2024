@@ -23,7 +23,7 @@ const Navbar = () => {
       <div className="flex justify-evenly w-1/2 text-xl " >
         <NavLink to="/" >Home</NavLink>
         <NavLink to="/About" >About</NavLink>
-        <NavLink to="/Work" >Work</NavLink>
+        <NavLink to="/Works" >Work</NavLink>
       </div>
     </div>
   )

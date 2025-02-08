@@ -12,18 +12,18 @@ const Contact = () => {
   gsap.registerPlugin(ScrollTrigger) 
   useGSAP(()=>{
     gsap.from(gsapRef.current, { 
-      duration: 1,
-      x: -100, 
-      opacity: 0,
-      ease: "elastic.inOut",
-      scrollTrigger:{
-        trigger: gsapRef.current,
-        scroller:"body",
-        // markers:true,
-        start: "top 80%",
-        end: "bottom 20%",
-        scrub:2
-      }
+      // duration: 1,
+      // x: -100, 
+      // opacity: 0,
+      // ease: "elastic.inOut",
+      // scrollTrigger:{
+      //   trigger: gsapRef.current,
+      //   scroller:"body",
+      //   // markers:true,
+      //   start: "top 80%",
+      //   end: "bottom 20%",
+      //   scrub:2
+      // }
     });
   })
   return (
