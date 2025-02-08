@@ -4,6 +4,7 @@ import './App.css';
 import Navbar from './components/Navbar';
 import About from './components/About';
 import Work from './components/Work';
+import Resume from './components/Resume';
 import { Routes, Route } from 'react-router-dom';
 import Home from './Page/Home'
 
@@ -38,6 +39,7 @@ const App = () => {
         <Route path="/" element={<Home/>} />
         <Route path="/About" element={<About/>} />
         <Route path="/Work" element={<Work/>} />
+        <Route path="/Resume" element={<Resume/>} />
       </Routes>
 
     </div>

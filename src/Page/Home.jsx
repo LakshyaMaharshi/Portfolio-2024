@@ -1,7 +1,8 @@
 import About from "../components/About";
 import Intro from "../components/Intro";
 import Work from "../components/Work";
-import Contact from '../components/Contact'
+import Contact from '../components/Contact';
+import Resume from "../components/Resume";
 
 const Home = () => {
   return (
@@ -9,6 +10,7 @@ const Home = () => {
       <Intro/>
       <About />
       <Work/>
+      <Resume/>
       <Contact/>
     </div>
   )

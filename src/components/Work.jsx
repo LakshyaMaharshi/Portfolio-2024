@@ -49,7 +49,7 @@ const Work = () => {
 
     
   
-    ScrollTrigger.refresh(); // Refresh ScrollTrigger calculations
+    ScrollTrigger.refresh(); 
   });
 
 

@@ -3,6 +3,7 @@ import './Intro.css'
 import gsap from 'gsap'
 import {useGSAP} from '@gsap/react'
 import { useRef } from 'react';
+import TypingAnimation from './TypingAnimation';
 const Intro = () => {
   const gsapRef = useRef();
   useGSAP(() =>{
@@ -22,7 +23,7 @@ const Intro = () => {
 
           <div className="text-div "  >
             <h4 className='mx-3 text-3xl' >Hello, I'm Lakshya a</h4>
-            <h1 className='text-7xl my-2 font-extrabold underline ' >Developer</h1>
+            <TypingAnimation/>
             <h4 className='mx-3 text-2xl mt-3 ' >At <span className='text-orange-600' >In</span>d<span className='text-lime-600	' >ia</span> </h4>
           </div>
 
