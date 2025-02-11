@@ -4,14 +4,19 @@ import { gsap } from "gsap";
 const TypingAnimation = () => {
   const textRef = useRef(null);
   const cursorRef = useRef(null);
+  const timeoutRef = useRef(null); 
 
   useEffect(() => {
+    if (!textRef.current || !cursorRef.current) return; 
+
     const words = ["Programmer", "Web Developer", "Data Analyst"];
     let currentWordIndex = 0;
     let currentText = "";
     let isDeleting = false;
 
     const type = () => {
+      if (!textRef.current) return; 
+
       const currentWord = words[currentWordIndex];
 
       if (isDeleting) {
@@ -24,7 +29,7 @@ const TypingAnimation = () => {
 
       let typeSpeed = 200;
       if (isDeleting) {
-        typeSpeed /= 3; 
+        typeSpeed /= 3;
       }
 
       if (!isDeleting && currentText === currentWord) {
@@ -35,17 +40,23 @@ const TypingAnimation = () => {
         currentWordIndex = (currentWordIndex + 1) % words.length;
       }
 
-      setTimeout(type, typeSpeed);
+      timeoutRef.current = setTimeout(type, typeSpeed);
     };
 
     type();
 
     gsap.to(cursorRef.current, {
       opacity: 0,
-      repeat: -1, 
+      repeat: -1,
       yoyo: true,
       duration: 0.7,
     });
+
+    // Cleanup function to stop timeout and GSAP animation
+    return () => {
+      clearTimeout(timeoutRef.current); 
+      gsap.killTweensOf(cursorRef.current);
+    };
   }, []);
 
   return (
