@@ -6,6 +6,7 @@ gsap.registerPlugin(ScrollTrigger);
 
 const skillsData = {
   frontend: [
+
     { skill: 'React', icon: 'https://cdn.worldvectorlogo.com/logos/react-2.svg' },
     { skill: 'HTML', icon: 'https://cdn.worldvectorlogo.com/logos/html-1.svg' },
     { skill: 'CSS', icon: 'https://cdn.worldvectorlogo.com/logos/css-3.svg' },
