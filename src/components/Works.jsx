@@ -39,12 +39,7 @@ const Works = ( )=> {
             title: "2023 - Present {Open Source Contribution}",
             description:
               "I am actively contributing to open-source projects to enhance my skills. This involvement allows me to collaborate with a global community of developers, tackle real-world problems, and gain exposure to diverse coding practices.",
-          },
-          {
-            title: "2021 - 2022",
-            description:
-              "Achieving a 94.76 percentile in JEE Main is a significant accomplishment, demonstrating a high level of proficiency in mathematics, physics, and chemistry.",
-          },
+          }
         ].map((item, index) => (
           <li className="my-16" key={index} ref={(el) => (listItems.current[index] = el)}>
             <h4 className="mb-4">{item.title}</h4>

@@ -1,85 +1,71 @@
-import { useRef } from "react";
+import { useRef, useEffect } from "react";
 import gsap from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
-import { useGSAP } from "@gsap/react";
 
 gsap.registerPlugin(ScrollTrigger);
 
 const Education = () => {
-  const sectionRef = useRef(null);
+  const sectionRefs = useRef([]); // Array to store refs
 
-  //   useGSAP(() => {
-  //     gsap.from(
-  //       sectionRef.current,
-  //       { y: -100, opacity: 0, scale: 0.9 }, // Initial State
-  //       {
-  //         y: 0,
-  //         opacity: 1,
-  //         scale: 1,
-  //         duration: 2.5,
-  //         ease: "power3.out",
-  //         scrollTrigger: {
-  //           trigger: sectionRef.current,
-  //           start: "top 85%",
-  //           end: "bottom 60%",
-  //           scrub: 2,
-  //         },
-  //       }
-  //     );
-  //   },);
+  useEffect(() => {
+    gsap.fromTo(
+      sectionRefs.current,
+      { opacity: 0, y: 50 },
+      {
+        opacity: 1,
+        y: 0,
+        duration: 0.8,
+        stagger: 0.3, // Each div appears after 0.3s
+        scrollTrigger: {
+          trigger: sectionRefs.current[0], // Trigger when the first div appears
+          start: "top 80%",
+        },
+      }
+    );
+  }, []);
 
   return (
-    <div className="mx-28 my-16" ref={sectionRef}>
-      <h1 className="text-accentColor text-7xl font-black mb-11">Education.</h1>
-      <div className="border-l-4 border-blue-500 ml-14 pl-9 space-y-8">
-        {/* Bachelor of Technology */}
-        <div className="relative">
-          <div className="absolute -left-3 top-2 w-4 h-4 bg-blue-500 rounded-full"></div>
-          <div className="ml-6">
-            <h3 className="text-xl font-bold text-blue-700">
-              BACHELOR OF TECHNOLOGY
-            </h3>
-            <p className="text-gray-500">2019 - 2023</p>
-            <p className="text-gray-700">
-              Poornima University
-            </p>
-            <p>
-            <strong>Branch:</strong> Computer Science and Engineering
-          </p>
+    <div className="mx-28 my-48 flex flex-col">
+      <h1 className="text-accentColor text-6xl font-black mb-11">Education.</h1>
+      <div className="border-l-8 border-blue-500 pl-9 py-14 space-y-8 p-6 bg-[--primary] rounded-2xl ">
+        {[
+          {
+            title: "BACHELOR OF TECHNOLOGY IN CSE",
+            year: "2022 - 2026",
+            university: "Poornima University",
+            Score: "8.8/10 CGPA",
+          },
+          {
+            title: "JEE Mains Examination",
+            year: "2021 - 2022",
+            university: "Poornima University",
+            Score: "94.53 Percentile",
+          },
+          {
+            title: " Senior Secondary (12th)",
+            year: "2019 - 2022",
+            university: "Poornima University",
+            Score: "91%",
+          },
+        ].map((edu, index) => (
+          <div
+            key={index}
+            className="relative group"
+            ref={(el) => (sectionRefs.current[index] = el)}
+          >
+            <div className="absolute -left-3 top-2 w-4 h-4 bg-blue-500 rounded-full"></div>
+            <div className="ml-6">
+              <div className="flex justify-between space-x-2">
+                <span className="text-xl font-bold text-black group-hover:text-blue-500 transition-colors duration-300">
+                  {edu.title}
+                </span>
+                <span className="italic font-light text-black ">Score: {edu.Score}</span>
+              </div>
+              <p className="text-gray-500">{edu.year}</p>
+              <p className="text-gray-700">{edu.university}</p>
+            </div>
           </div>
-        </div>
-
-        <div className="relative">
-          <div className="absolute -left-3 top-2 w-4 h-4 bg-blue-500 rounded-full"></div>
-          <div className="ml-6">
-            <h3 className="text-xl font-bold text-blue-700">
-              BACHELOR OF TECHNOLOGY
-            </h3>
-            <p className="text-gray-500">2019 - 2023</p>
-            <p className="text-gray-700">
-              Poornima University
-            </p>
-            <p>
-            <strong>Branch:</strong> Computer Science and Engineering
-          </p>
-          </div>
-        </div>
-
-        <div className="relative">
-          <div className="absolute -left-3 top-2 w-4 h-4 bg-blue-500 rounded-full"></div>
-          <div className="ml-6">
-            <h3 className="text-xl font-bold text-blue-700">
-              BACHELOR OF TECHNOLOGY
-            </h3>
-            <p className="text-gray-500">2019 - 2023</p>
-            <p className="text-gray-700">
-              Poornima University
-            </p>
-            <p>
-            <strong>Branch:</strong> Computer Science and Engineering
-          </p>
-          </div>
-        </div>
+        ))}
       </div>
     </div>
   );
