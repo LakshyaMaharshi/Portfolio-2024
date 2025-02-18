@@ -16,7 +16,7 @@
     "react-scripts": "^5.0.1",
     "web-vitals": "^2.1.4"
   },
-  "homepage": "https://github.com/LakshyaMaharshi/Portfolio-2024",
+  "homepage": "https://lakshyamaharshi.github.io/Portfolio-2024/",
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",

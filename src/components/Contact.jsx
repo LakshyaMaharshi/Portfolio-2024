@@ -36,9 +36,9 @@ const Contact = () => {
           Feel free to reach out! Whether you have a project in mind or just want to connect, I'm open to new opportunities and collaborations. Contact me via Social media handles form below. I look forward to discussing how we can work together.
           </p>
           <div className=" social-media flex gap-5  w-full justify-around  " >
-            <a className="hover:text-blue-700	 delay-100 "  href="#"> {<SiLinkedin className="inline mb-1 "  />} LinkedIn</a>
-            <a className="hover:text-fuchsia-700	 delay-100 " href="#"> <SiInstagram className="inline mb-1 " /> Instagram</a>
-            <a className="hover:text-yellow-400		 delay-100 " href="#"><SiGithub className="inline mb-1 " /> GitHub</a>
+            <a className="hover:text-blue-700	 delay-100 "  href="https://www.linkedin.com/in/lakshya-maharshi/" target="_blank"> {<SiLinkedin className="inline mb-1 "  />} LinkedIn</a>
+            <a className="hover:text-fuchsia-700	 delay-100 " href="https://www.instagram.com/mai_lakshya_hoon/" target="_blank"> <SiInstagram className="inline mb-1 " /> Instagram</a>
+            <a className="hover:text-yellow-400		 delay-100 " href="https://github.com/LakshyaMaharshi" target="_blank"><SiGithub className="inline mb-1 " /> GitHub</a>
           </div>
         </div>
       </div>
