@@ -1,18 +1,18 @@
 {
   "files": {
-    "main.css": "/LakshyaMaharshi/Portfolio-2024/static/css/main.47acb209.css",
-    "main.js": "/LakshyaMaharshi/Portfolio-2024/static/js/main.91124b60.js",
-    "static/media/BharatBazaar.png": "/LakshyaMaharshi/Portfolio-2024/static/media/BharatBazaar.dff2845f9279339e1147.png",
-    "static/media/profileImg.jpg": "/LakshyaMaharshi/Portfolio-2024/static/media/profileImg.ca3d3f0c250e7408ce89.jpg",
-    "static/media/contactImg.png": "/LakshyaMaharshi/Portfolio-2024/static/media/contactImg.8d34e4e0e3b5f3ddac92.png",
-    "static/media/GyanYatriSignup.png": "/LakshyaMaharshi/Portfolio-2024/static/media/GyanYatriSignup.065cf8650a722b87cdf1.png",
-    "static/media/GyanYatriLogin.png": "/LakshyaMaharshi/Portfolio-2024/static/media/GyanYatriLogin.f517ba9084a20c56bbb0.png",
-    "index.html": "/LakshyaMaharshi/Portfolio-2024/index.html",
-    "main.47acb209.css.map": "/LakshyaMaharshi/Portfolio-2024/static/css/main.47acb209.css.map",
-    "main.91124b60.js.map": "/LakshyaMaharshi/Portfolio-2024/static/js/main.91124b60.js.map"
+    "main.css": "/Portfolio-2024/static/css/main.47acb209.css",
+    "main.js": "/Portfolio-2024/static/js/main.1933442b.js",
+    "static/media/BharatBazaar.png": "/Portfolio-2024/static/media/BharatBazaar.dff2845f9279339e1147.png",
+    "static/media/profileImg.jpg": "/Portfolio-2024/static/media/profileImg.ca3d3f0c250e7408ce89.jpg",
+    "static/media/contactImg.png": "/Portfolio-2024/static/media/contactImg.8d34e4e0e3b5f3ddac92.png",
+    "static/media/GyanYatriSignup.png": "/Portfolio-2024/static/media/GyanYatriSignup.065cf8650a722b87cdf1.png",
+    "static/media/GyanYatriLogin.png": "/Portfolio-2024/static/media/GyanYatriLogin.f517ba9084a20c56bbb0.png",
+    "index.html": "/Portfolio-2024/index.html",
+    "main.47acb209.css.map": "/Portfolio-2024/static/css/main.47acb209.css.map",
+    "main.1933442b.js.map": "/Portfolio-2024/static/js/main.1933442b.js.map"
   },
   "entrypoints": [
     "static/css/main.47acb209.css",
-    "static/js/main.91124b60.js"
+    "static/js/main.1933442b.js"
   ]
 }
