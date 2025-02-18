@@ -48,16 +48,11 @@ const About = () => {
     <div id="about-intro-div" className="mx-28 my-16" ref={gsapRef}>
       <h1 className="text-accentColor text-6xl font-black mb-11">About Me.</h1>
       <p className="text-2xl leading-9">
-        I am a beginner developer, I possess a versatile skill set in frontend
-        development and app creation. I am proficient in crafting dynamic web
-        experiences and skilled in mobile app development. I am eager to
-        contribute innovatively and grow in collaborative environments.
-        Additionally, I am committed to continuous learning and growth in
-        development.
+      Full-Stack Developer (MERN) & Data Analyst with proven expertise in architecting enterprise-grade web solutions and driving data-informed decision making. Delivered high-performance applications using React.js, Node.js, and Python, achieving 98% client satisfaction. Championed innovative technical solutions that transformed business operations and user experiences.
       </p>
 
       <div
-        className="about-table grid grid-cols-2 md:grid-cols-4 gap-6 my-12 overflow-visible"
+        className="about-table grid grid-cols-2 md:grid-cols-4 gap-6 my-20 overflow-visible"
         ref={tableRef}
       >
         {/* Years of Coding Experience */}

@@ -1,7 +1,7 @@
 import { useState } from "react";
-import BharatBazaar from "../Img/BharatBazaar.png";
-import GyanYatriLogin from "../Img/GyanYatriLogin.png";
-import GyanYatriSignup from "../Img/GyanYatriSignup.png";
+import BharatBazaar from "../assets/Img/BharatBazaar.png";
+import GyanYatriLogin from "../assets/Img/GyanYatriLogin.png";
+import GyanYatriSignup from "../assets/Img/GyanYatriSignup.png";
 import { FaAngleLeft } from "react-icons/fa";
 import { FaAngleRight } from "react-icons/fa";
 import gsap from "gsap";

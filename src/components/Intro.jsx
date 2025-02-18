@@ -1,4 +1,4 @@
-import profileImg from '../Img/profileImg.jpg'
+import profileImg from '../assets/Img/profileImg.jpg'
 import './Intro.css'
 import gsap from 'gsap'
 import {useGSAP} from '@gsap/react'
@@ -27,7 +27,7 @@ const Intro = () => {
             <h4 className='mx-3 text-2xl mt-3 ' >At <span className='text-orange-600' >In</span>d<span className='text-lime-600	' >ia</span> </h4>
           </div>
 
-          <a href="#" target='_blank' className='resume text-center w-1/3 mt-10 border-solid border-2 rounded-md text-xl font-semibold py-1' >Resume</a>
+          <a href="/Lakshya_maharshi_CV.pdf" download className='resume text-center w-1/3 mt-10 border-solid border-2 rounded-md text-xl font-semibold py-1' >Resume</a>
 
         </div>
 

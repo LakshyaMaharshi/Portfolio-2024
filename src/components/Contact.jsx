@@ -1,4 +1,4 @@
-import contactImg from "../Img/contactImg.png";
+import contactImg from "../assets/Img/contactImg.png";
 import { SiLinkedin } from "react-icons/si";
 import { SiInstagram } from "react-icons/si";
 import { SiGithub } from "react-icons/si";
