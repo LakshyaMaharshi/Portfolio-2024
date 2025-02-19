@@ -55,25 +55,21 @@ const About = () => {
         className="about-table grid grid-cols-2 md:grid-cols-4 gap-6 my-20 overflow-visible"
         ref={tableRef}
       >
-        {/* Years of Coding Experience */}
         <div className="text-center p-6 bg-[--primary] rounded-lg shadow-md hover:shadow-xl transition-all duration-300 transform hover:-translate-y-2">
-          <h3 className="text-5xl font-bold text-accentColor">1.5</h3>
+          <h3 className="text-5xl font-bold text-accentColor">2.5</h3>
           <p className="text-lg text-gray-700 mt-2">Years of Coding Experience</p>
         </div>
 
-        {/* Passionate About Problem Solving */}
         <div className="text-center p-6 bg-[--primary] rounded-lg shadow-md hover:shadow-xl transition-all duration-300 transform hover:-translate-y-2">
           <h3 className="text-5xl font-bold text-accentColor">💡</h3>
           <p className="text-lg text-gray-700 mt-2">Passionate About Problem Solving</p>
         </div>
 
-        {/* Love for Clean Code */}
         <div className="text-center p-6 bg-[--primary] rounded-lg shadow-md hover:shadow-xl transition-all duration-300 transform hover:-translate-y-2">
           <h3 className="text-5xl font-bold text-accentColor">❤️</h3>
-          <p className="text-lg text-gray-700 mt-2">Love Building New Apps</p>
+          <p className="text-lg text-gray-700 mt-2">Love To Listening Song</p>
         </div>
 
-        {/* Projects Completed */}
         <div className="text-center p-6 bg-[--primary] rounded-lg shadow-md hover:shadow-xl transition-all duration-300 transform hover:-translate-y-2">
           <h3 className="text-5xl font-bold text-accentColor">📊</h3>
           <p className="text-lg text-gray-700 mt-2">Enjoy Playing with Data</p>
