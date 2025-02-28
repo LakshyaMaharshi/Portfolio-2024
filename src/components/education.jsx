@@ -25,9 +25,9 @@ const Education = () => {
   }, []);
 
   return (
-    <div className="mx-28 my-48 flex flex-col">
-      <h1 className="text-accentColor text-6xl font-black mb-11">Education.</h1>
-      <div className="border-l-8 border-blue-500 pl-9 py-14 space-y-8 p-6 bg-[--primary] rounded-2xl ">
+    <div className="mx-4 md:mx-28 my-16 md:my-48 flex flex-col">
+      <h1 className="text-accentColor text-4xl md:text-6xl font-black mb-11">Education.</h1>
+      <div className="border-l-4 md:border-l-8 border-blue-500 pl-4 md:pl-9 py-14 space-y-8 p-6 bg-[--primary] rounded-2xl">
         {[
           {
             title: "BACHELOR OF TECHNOLOGY IN CSE",
@@ -42,7 +42,7 @@ const Education = () => {
             Score: "94.53 Percentile",
           },
           {
-            title: " Senior Secondary (12th)",
+            title: "Senior Secondary (12th)",
             year: "2019 - 2022",
             university: "Poornima University",
             Score: "91%",
@@ -56,13 +56,13 @@ const Education = () => {
             <div className="absolute -left-3 top-2 w-4 h-4 bg-blue-500 rounded-full"></div>
             <div className="ml-6">
               <div className="flex justify-between space-x-2">
-                <span className="text-xl font-bold text-black group-hover:text-blue-500 transition-colors duration-300">
+                <span className="text-lg md:text-xl font-bold text-black group-hover:text-blue-500 transition-colors duration-300">
                   {edu.title}
                 </span>
-                <span className="italic font-light text-black ">Score: {edu.Score}</span>
+                <span className="italic font-light text-black">Score: {edu.Score}</span>
               </div>
-              <p className="text-gray-500">{edu.year}</p>
-              <p className="text-gray-700">{edu.university}</p>
+              <p className="text-gray-500 text-sm md:text-base">{edu.year}</p>
+              <p className="text-gray-700 text-sm md:text-base">{edu.university}</p>
             </div>
           </div>
         ))}

@@ -45,34 +45,34 @@ const About = () => {
   // }, []);
 
   return (
-    <div id="about-intro-div" className="mx-28 my-16" ref={gsapRef}>
-      <h1 className="text-accentColor text-6xl font-black mb-11">About Me.</h1>
-      <p className="text-2xl leading-9">
-      Full-Stack Developer (MERN) & Data Analyst with proven expertise in architecting enterprise-grade web solutions and driving data-informed decision making. Delivered high-performance applications using React.js, Node.js, and Python, achieving 98% client satisfaction. Championed innovative technical solutions that transformed business operations and user experiences.
+    <div id="about-intro-div" className="mx-4 md:mx-28 my-16" ref={gsapRef}>
+      <h1 className="text-accentColor text-4xl md:text-6xl font-black mb-11">About Me.</h1>
+      <p className="text-lg md:text-2xl leading-7 md:leading-9">
+        Full-Stack Developer (MERN) & Data Analyst with proven expertise in architecting enterprise-grade web solutions and driving data-informed decision making. Delivered high-performance applications using React.js, Node.js, and Python, achieving 98% client satisfaction. Championed innovative technical solutions that transformed business operations and user experiences.
       </p>
 
       <div
-        className="about-table grid grid-cols-2 md:grid-cols-4 gap-6 my-20 overflow-visible"
+        className="about-table grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-6 my-20 overflow-visible"
         ref={tableRef}
       >
         <div className="text-center p-6 bg-[--primary] rounded-lg shadow-md hover:shadow-xl transition-all duration-300 transform hover:-translate-y-2">
-          <h3 className="text-5xl font-bold text-accentColor">2.5</h3>
-          <p className="text-lg text-gray-700 mt-2">Years of Coding Experience</p>
+          <h3 className="text-4xl md:text-5xl font-bold text-accentColor">2.5</h3>
+          <p className="text-base md:text-lg text-gray-700 mt-2">Years of Coding Experience</p>
         </div>
 
         <div className="text-center p-6 bg-[--primary] rounded-lg shadow-md hover:shadow-xl transition-all duration-300 transform hover:-translate-y-2">
-          <h3 className="text-5xl font-bold text-accentColor">💡</h3>
-          <p className="text-lg text-gray-700 mt-2">Passionate About Problem Solving</p>
+          <h3 className="text-4xl md:text-5xl font-bold text-accentColor">💡</h3>
+          <p className="text-base md:text-lg text-gray-700 mt-2">Passionate About Problem Solving</p>
         </div>
 
         <div className="text-center p-6 bg-[--primary] rounded-lg shadow-md hover:shadow-xl transition-all duration-300 transform hover:-translate-y-2">
-          <h3 className="text-5xl font-bold text-accentColor">❤️</h3>
-          <p className="text-lg text-gray-700 mt-2">Love To Listening Song</p>
+          <h3 className="text-4xl md:text-5xl font-bold text-accentColor">❤️</h3>
+          <p className="text-base md:text-lg text-gray-700 mt-2">Love To Listening Song</p>
         </div>
 
         <div className="text-center p-6 bg-[--primary] rounded-lg shadow-md hover:shadow-xl transition-all duration-300 transform hover:-translate-y-2">
-          <h3 className="text-5xl font-bold text-accentColor">📊</h3>
-          <p className="text-lg text-gray-700 mt-2">Enjoy Playing with Data</p>
+          <h3 className="text-4xl md:text-5xl font-bold text-accentColor">📊</h3>
+          <p className="text-base md:text-lg text-gray-700 mt-2">Enjoy Playing with Data</p>
         </div>
       </div>
     </div>

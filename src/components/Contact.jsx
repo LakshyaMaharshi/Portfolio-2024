@@ -11,30 +11,30 @@ const Contact = () => {
 
   useGSAP(() => {
     gsap.from(gsapRef.current, {
-      // Add animations here if needed
+      
     });
   });
 
   return (
-    <div className="mx-28 my-16" ref={gsapRef}>
-      <h1 className="text-accentColor text-7xl font-black mb-11">Contact.</h1>
-      <div className="flex h-80 gap-10">
+    <div className="mx-4 md:mx-28 my-16 md:my-48" ref={gsapRef}>
+      <h1 className="text-accentColor text-4xl md:text-6xl font-black mb-11">Contact.</h1>
+      <div className="flex flex-col md:flex-row h-auto md:h-80 gap-10">
         <img
-          className="rounded-2xl"
+          className="rounded-2xl w-full md:w-1/2 object-cover object-top"
           style={{ transform: "rotateY(180deg)" }}
           src={contactImg}
           alt="Contact"
         />
-        <div className="flex flex-col justify-around items-center">
-          <p className="text-xl leading-9">
+        <div className="flex flex-col justify-around items-center w-full md:w-1/2">
+          <p className="text-lg md:text-xl leading-7 md:leading-9 text-center md:text-left">
             Feel free to reach out! Whether you have a project in mind or just
             want to connect, I'm open to new opportunities and collaborations.
             Contact me via social media handles below. I look forward to
             discussing how we can work together.
           </p>
-          <div className="social-media flex gap-5 w-full justify-around">
+          <div className="social-media flex gap-y-5 gap-x-5 w-full justify-around pt-6 ">
             <a
-              className="hover:text-blue-700 delay-100"
+              className="hover:text-blue-700 delay-100 text-center"
               href="https://www.linkedin.com/in/lakshya-maharshi/"
               target="_blank"
               rel="noopener noreferrer"
@@ -42,7 +42,7 @@ const Contact = () => {
               <SiLinkedin className="inline mb-1" /> LinkedIn
             </a>
             <a
-              className="hover:text-fuchsia-700 delay-100"
+              className="hover:text-fuchsia-700 delay-100 text-center"
               href="https://www.instagram.com/mai_lakshya_hoon/"
               target="_blank"
               rel="noopener noreferrer"
@@ -50,7 +50,7 @@ const Contact = () => {
               <SiInstagram className="inline mb-1" /> Instagram
             </a>
             <a
-              className="hover:text-yellow-400 delay-100"
+              className="hover:text-yellow-400 delay-100 text-center"
               href="https://github.com/LakshyaMaharshi"
               target="_blank"
               rel="noopener noreferrer"
@@ -60,14 +60,14 @@ const Contact = () => {
           </div>
         </div>
       </div>
-      <div className="footer bg-[--background] py-14 px-6">
+      <div className="footer bg-[--background] py-20 px-6 mt-10">
         <div className="max-w-6xl mx-auto">
           {/* About Section */}
           <div className="text-center mb-12">
-            <h2 className="text-xl font-semibold text-[--primary] uppercase tracking-wide mb-4">
+            <h2 className="text-xl md:text-2xl font-semibold text-[--primary] uppercase tracking-wide mb-4">
               About This Portfolio
             </h2>
-            <p className="text-lg leading-7 max-w-3xl mx-auto text-[--text]">
+            <p className="text-lg md:text-xl leading-7 md:leading-9 max-w-3xl mx-auto text-[--text]">
               This portfolio represents my <b>journey, growth, and passion</b>{" "}
               for web development. It showcases my skills and projects while
               offering an <b>interactive and engaging user experience</b>.
@@ -85,10 +85,10 @@ const Contact = () => {
 
           {/* Open Source Section */}
           <div className="text-center mb-12 bg-[--secondary] p-6 rounded-lg">
-            <h2 className="text-xl font-semibold text-[--primary] uppercase tracking-wide mb-4">
+            <h2 className="text-xl md:text-2xl font-semibold text-[--primary] uppercase tracking-wide mb-4">
               Open Source & Contributions
             </h2>
-            <p className="text-lg leading-7 max-w-3xl mx-auto text-[--text]">
+            <p className="text-lg md:text-xl leading-7 md:leading-9 max-w-3xl mx-auto text-[--text]">
               This project is <b>open source</b>. If you have suggestions,
               ideas, or improvements, feel free to
               <b> raise an issue</b> or <b>submit a pull request</b>. Your
@@ -98,7 +98,7 @@ const Contact = () => {
               ⭐ If you like this project, consider giving it a star on GitHub!
               <br />
               <br />
-              <div className="flex justify-center ">
+              <div className="flex justify-center">
                 <a
                   href="https://github.com/LakshyaMaharshi/portfolio-2024"
                   target="_blank"
@@ -107,12 +107,10 @@ const Contact = () => {
              bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500 
              hover:scale-105 hover:shadow-lg flex items-center justify-center group w-64"
                 >
-                  {/* Default Text */}
                   <span className="group-hover:opacity-0 transition-opacity duration-300">
                     Visit GitHub Repository
                   </span>
 
-                  {/* GitHub Logo (Visible on Hover) */}
                   <svg
                     className="absolute opacity-0 group-hover:opacity-100 transition-opacity duration-300 w-8 h-8"
                     xmlns="http://www.w3.org/2000/svg"
@@ -131,7 +129,7 @@ const Contact = () => {
           </div>
 
           {/* Footer Bottom */}
-          <div className="border-t border-gray-700 pt-6 text-center flex justify-center gap-10">
+          <div className="border-t border-gray-700 pt-6 text-center flex flex-col md:flex-row justify-center gap-10">
             <span className="text-sm text-gray-500">
               Designed & Developed by <b>Lakshya Maharshi</b>
             </span>
